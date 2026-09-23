@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 70" width="240" height="70">
+  <defs>
+    <linearGradient id="mtn" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#9bb0c8"/>
+      <stop offset="100%" stop-color="#4a6a8a"/>
+    </linearGradient>
+  </defs>
+  <!-- mountain behind -->
+  <path d="M -5 58 L 35 18 L 65 42 L 85 12 L 125 48 L 165 20 L 205 52 L 245 28 L 245 70 L -5 70 Z" fill="url(#mtn)" opacity="0.9"/>
+  <path d="M 35 18 L 42 26 L 50 24 L 35 18" fill="white" opacity="0.7"/>
+  <path d="M 85 12 L 90 20 L 97 18 L 85 12" fill="white" opacity="0.7"/>
+  
+  <!-- orange fruit - bottom left -->
+  <circle cx="22" cy="52" r="11" fill="#ff8c1a" stroke="#e67300" stroke-width="1"/>
+  <ellipse cx="22" cy="44" rx="2.5" ry="1.5" fill="#2d5a27"/>
+  <path d="M 22 42 Q 26 39 28 42" stroke="#4a7a3a" stroke-width="1" fill="none"/>
+  
+  <!-- green parrot - sitting on orange / near logo -->
+  <!-- body -->
+  <ellipse cx="38" cy="48" rx="9" ry="7" fill="#2eb82e"/>
+  <!-- head -->
+  <circle cx="46" cy="38" r="7" fill="#33cc33"/>
+  <!-- beak orange -->
+  <path d="M 52 36 L 59 38 L 52 42 Z" fill="#ff6600"/>
+  <!-- eye -->
+  <circle cx="48" cy="36" r="1.8" fill="white"/>
+  <circle cx="48.5" cy="36" r="0.9" fill="black"/>
+  <!-- wing -->
+  <ellipse cx="36" cy="50" rx="5" ry="3.5" fill="#248f24"/>
+  <!-- tail -->
+  <path d="M 29 50 L 18 54 L 24 48 Z" fill="#1f7a1f"/>
+
+  <!-- logo text with white outline for readability over mountain -->
+  <g font-family="Inter, Arial, sans-serif" font-weight="800">
+    <text x="68" y="48" font-size="22" fill="white" stroke="white" stroke-width="4" stroke-linejoin="round">Desi</text>
+    <text x="68" y="48" font-size="22" fill="#1a1040">Desi</text>
+    <text x="122" y="48" font-size="22" fill="white" stroke="white" stroke-width="4" stroke-linejoin="round">.markets</text>
+    <text x="122" y="48" font-size="22" fill="#ff9933">.markets</text>
+  </g>
+</svg>
