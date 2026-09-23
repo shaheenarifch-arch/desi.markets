@@ -17,5 +17,8 @@ footer .logo{font-family:'Yatra One',Georgia,serif;font-size:1.4rem;color:#fff;t
 .cta-band{background:linear-gradient(135deg,#d81b60,#ff6f00 60%,#ffb300);color:#fff;text-align:center;padding:64px 0}
 .cta-band h2{color:#fff;font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:10px}.cta-band p{max-width:34em;margin:0 auto 22px}.cta-band .ad{color:#fff}
 .nav-links a.btn-sm{white-space:nowrap}
-
-.logo{display:inline-flex;align-items:center;gap:8px}.logo img{display:block;flex:none}footer .logo{display:inline-flex}
+.logo{display:inline-flex;align-items:center;gap:8px;text-decoration:none}
+.logo img{display:block;flex:none;height:36px;width:auto}
+footer .logo{display:inline-flex;align-items:center}
+footer .logo img{height:40px;width:auto}
+header .logo img,.site-header .logo img{height:36px;width:auto}
