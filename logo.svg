@@ -1,25 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 70" width="100" height="70">
-  <!-- MOUNTAIN - large and bold -->
-  <path d="M5 55 L50 5 L95 55 Z" fill="#5B8FBF" stroke="#3A5A8A" stroke-width="2"/>
-  <path d="M5 55 L50 5 L35 22 L20 18 L5 38 Z" fill="#6AA8D8"/>
-  <!-- Snow -->
-  <path d="M50 5 L60 20 L52 18 L45 24 L50 5 Z" fill="white"/>
-  <path d="M30 18 L38 26 L32 26 Z" fill="white"/>
-  <!-- GREEN HILL -->
-  <path d="M5 55 C15 30, 35 25, 50 35 C65 45, 80 38, 95 50 L95 58 L5 58 Z" fill="#3CB371"/>
-  <!-- ORANGE - LARGE, bright -->
-  <circle cx="78" cy="48" r="14" fill="#FF8C00" stroke="#CC6A00" stroke-width="2"/>
-  <path d="M75 36 Q78 33 81 36" stroke="#2E8B57" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-  <!-- GREEN PARROT - LARGE, sitting on orange -->
-  <ellipse cx="62" cy="42" rx="11" ry="13" fill="#2ECC71"/>
-  <circle cx="62" cy="32" r="9" fill="#2ECC71"/>
-  <!-- Beak -->
-  <path d="M70 32 Q76 33 70 38 Z" fill="#FF6B00"/>
-  <!-- Eye -->
-  <circle cx="65" cy="30" r="2.2" fill="white"/>
-  <circle cx="65.5" cy="30" r="1" fill="black"/>
-  <!-- Wing -->
-  <ellipse cx="58" cy="45" rx="5" ry="8" fill="#27AE60" opacity="0.9"/>
-  <!-- Tail -->
-  <path d="M52 48 L46 55 L54 50 Z" fill="#229954"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 48" width="72" height="48">
+  <g>
+    <path d="M2 44 L22 12 L36 26 L50 10 L70 44 Z" fill="#2b1458"/>
+    <path d="M8 44 L26 20 L38 30 L52 16 L64 44 Z" fill="#6c4db0" opacity="0.85"/>
+    <ellipse cx="38" cy="40" rx="16" ry="9" fill="#ff8c1a"/>
+    <ellipse cx="38" cy="38" rx="13" ry="7" fill="#ffb84d"/>
+    <path d="M38 32 C46 32 50 36 49 41 C49 43 48 45 42 45 L42 39 C42 38 42 37 44 37 C42 35 40 34 38 34 Z" fill="#2eb82e"/>
+    <path d="M42 38 C45 38 48 40 47 43 L42 43 Z" fill="#1a7a1a"/>
+    <circle cx="47" cy="36.5" r="1.3" fill="#000"/>
+    <path d="M50 36.2 C52.5 35 54 36.2 53 38 C52 37 51 37 50 37 Z" fill="#ff3300"/>
+    <path d="M32 35 C33 33 35 32 37 33 L36 36 Z" fill="#2eb82e"/>
+  </g>
 </svg>
