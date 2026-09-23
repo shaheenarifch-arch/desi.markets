@@ -13,7 +13,10 @@ footer .logo{font-family:'Yatra One',Georgia,serif;font-size:1.4rem;color:#fff;t
 .btns+.ad,.hero .ad{color:#e6d5ff}
 .sf{display:grid;gap:6px;margin:18px 0 30px}.sf label{font-weight:600;margin-top:8px}
 .sf input,.sf textarea{padding:12px 14px;border:2px solid #e5cfa0;border-radius:12px;font:inherit;background:#fff;width:100%}
-.sf button{border:0;cursor:pointer;justify-self:start;margin-top:14px}.sf .msg{color:#00695c}
+.sf button{border:0;cursor:pointer;justify-self:start;margin-top:14px;padding:14px 28px;background:#ffb300;color:#2b1458;border-radius:99px;font-weight:700;font-size:1rem}.sf button:hover{background:#ffc947}
+.cta{display:inline-block;padding:14px 28px;background:#ffb300;color:#2b1458;border-radius:99px;font-weight:700;text-decoration:none;border:0;cursor:pointer;font-size:1rem}
+.cta:hover{background:#ffc947}
+.sf .msg{color:#00695c}
 .cta-band{background:linear-gradient(135deg,#d81b60,#ff6f00 60%,#ffb300);color:#fff;text-align:center;padding:64px 0}
 .cta-band h2{color:#fff;font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:10px}.cta-band p{max-width:34em;margin:0 auto 22px}.cta-band .ad{color:#fff}
 .nav-links a.btn-sm{white-space:nowrap}
