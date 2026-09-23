@@ -1,24 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 52" width="72" height="52">
-  <defs>
-    <linearGradient id="mt" x1="0" x2="0" y1="0" y2="1">
-      <stop offset="0%" stop-color="#9bb8c8"/>
-      <stop offset="100%" stop-color="#4a6e8a"/>
-    </linearGradient>
-  </defs>
-  <path d="M5 38 L 18 8 L 35 22 L 52 6 L 68 38 Z" fill="url(#mt)" opacity="0.95"/>
-  <path d="M12 22 L 18 8 L 24 18 Z" fill="white" opacity="0.85"/>
-  <path d="M48 18 L 52 6 L 58 14 Z" fill="white" opacity="0.85"/>
-  <path d="M5 38 L 18 28 L 35 32 L 68 38 L 68 42 L 5 42 Z" fill="#2d8a4e"/>
-  <path d="M8 42 L 68 42 L 68 48 L 2 48 L 2 42 Z" fill="#3a5a7a"/>
-  <ellipse cx="22" cy="36" rx="11" ry="11" fill="#ff8c1a" stroke="#e67300" stroke-width="1"/>
-  <ellipse cx="22" cy="32" rx="2.5" ry="1.5" fill="#2daa27"/>
-  <ellipse cx="38" cy="28" rx="9" ry="7" fill="#2eb82e"/>
-  <circle cx="46" cy="23" r="7" fill="#33cc33"/>
-  <path d="M52 26 L 59 28 L 52 32 Z" fill="#ff6600"/>
-  <circle cx="48" cy="21" r="1.8" fill="white"/>
-  <circle cx="48.5" cy="21" r="0.9" fill="black"/>
-  <ellipse cx="36" cy="34" rx="5" ry="3.5" fill="#248f24"/>
-  <path d="M29 38 L 18 44 L 24 48 Z" fill="#1f7a1f"/>
-  <path d="M10 38 L 10 46 L 18 46 L 18 38 L 14 34 Z" fill="#ff9a3d" stroke="#cc6600" stroke-width="0.5"/>
-  <rect x="12" y="40" width="4" height="6" fill="#ffe0b2"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 70" width="100" height="70">
+  <!-- MOUNTAIN - large and bold -->
+  <path d="M5 55 L50 5 L95 55 Z" fill="#5B8FBF" stroke="#3A5A8A" stroke-width="2"/>
+  <path d="M5 55 L50 5 L35 22 L20 18 L5 38 Z" fill="#6AA8D8"/>
+  <!-- Snow -->
+  <path d="M50 5 L60 20 L52 18 L45 24 L50 5 Z" fill="white"/>
+  <path d="M30 18 L38 26 L32 26 Z" fill="white"/>
+  <!-- GREEN HILL -->
+  <path d="M5 55 C15 30, 35 25, 50 35 C65 45, 80 38, 95 50 L95 58 L5 58 Z" fill="#3CB371"/>
+  <!-- ORANGE - LARGE, bright -->
+  <circle cx="78" cy="48" r="14" fill="#FF8C00" stroke="#CC6A00" stroke-width="2"/>
+  <path d="M75 36 Q78 33 81 36" stroke="#2E8B57" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- GREEN PARROT - LARGE, sitting on orange -->
+  <ellipse cx="62" cy="42" rx="11" ry="13" fill="#2ECC71"/>
+  <circle cx="62" cy="32" r="9" fill="#2ECC71"/>
+  <!-- Beak -->
+  <path d="M70 32 Q76 33 70 38 Z" fill="#FF6B00"/>
+  <!-- Eye -->
+  <circle cx="65" cy="30" r="2.2" fill="white"/>
+  <circle cx="65.5" cy="30" r="1" fill="black"/>
+  <!-- Wing -->
+  <ellipse cx="58" cy="45" rx="5" ry="8" fill="#27AE60" opacity="0.9"/>
+  <!-- Tail -->
+  <path d="M52 48 L46 55 L54 50 Z" fill="#229954"/>
 </svg>
