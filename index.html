@@ -43,6 +43,14 @@
 .fs-back{display:inline-flex;align-items:center;gap:6px;color:inherit;text-decoration:none;font-weight:600;opacity:.85}
 .fs-back:hover{opacity:1;text-decoration:underline;text-underline-offset:3px}
 .fs-sr{position:absolute!important;width:1px!important;height:1px!important;overflow:hidden!important;clip:rect(0 0 0 0)!important;white-space:nowrap!important;padding:0!important;margin:-1px!important;border:0!important}
+</style><style id="hero-merge">
+.hero{position:relative;overflow:hidden;isolation:isolate;min-height:clamp(520px,70vh,720px);display:flex;align-items:center;background:#2a0f4f}
+.hero .hero-grid{position:static;grid-template-columns:minmax(0,600px) 1fr}
+.hero .hero-grid>div:first-child{position:relative;z-index:2}
+.hero .hero-image{position:absolute;inset:0;z-index:0;border:0;border-radius:0;box-shadow:none;background:none;aspect-ratio:auto;max-height:none;width:auto}
+.hero .hero-image img{width:100%;height:100%;object-fit:cover;object-position:right center}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,#2a0f4f 0%,rgba(42,15,79,.94) 30%,rgba(42,15,79,.6) 50%,rgba(42,15,79,.1) 75%,rgba(42,15,79,0) 100%),linear-gradient(0deg,rgba(42,15,79,.5) 0%,rgba(42,15,79,0) 28%)}
+@media(max-width:860px){.hero{min-height:620px;align-items:flex-end;padding-bottom:40px}.hero .hero-grid{grid-template-columns:1fr}.hero .hero-image img{object-position:70% center}.hero::before{background:linear-gradient(0deg,#2a0f4f 0%,rgba(42,15,79,.9) 50%,rgba(42,15,79,.45) 80%,rgba(42,15,79,.35) 100%)}}
 </style></head><body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="header"><div class="wrap nav"><a class="brand" href="/">Desi<span>.markets</span></a><nav class="navlinks" aria-label="Main"><a href="#cat-0">Sweets</a><a href="#cat-1">Snacks</a><a href="#cat-2">Pantry</a><a href="#cat-3">Spices</a><a href="#cat-4">Tea</a><a href="#cat-5">Hair Care</a><a href="#cat-6">Skin</a><a href="#faq">FAQ</a><a class="navcta" href="#cat-0">Shop popular picks</a></nav></div></header>
