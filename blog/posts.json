@@ -40,5 +40,19 @@
     "google_quality_passed": true,
     "eeat_score": 100,
     "seo_aeo_score": 8.42
+  },
+  {
+    "keyword": "Buying South Asian groceries online in the US: complete guide",
+    "title": "Buying South Asian Groceries Online in the US: Guide",
+    "description": "Buying South Asian groceries online in the US: complete guide to retailers, pantry staples, shipping, and avoiding common ordering mistakes.",
+    "file": "buying-south-asian-groceries-online-in-the-us-complete-guide.html",
+    "date": "2026-10-31",
+    "archetype": "authority_guide",
+    "archetype_confidence": 0.97,
+    "risk_level": "low",
+    "requires_human_review": false,
+    "google_quality_passed": true,
+    "eeat_score": 100,
+    "seo_aeo_score": 9.55
   }
 ]
