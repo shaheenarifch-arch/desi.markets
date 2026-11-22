@@ -109,4 +109,62 @@ document.querySelectorAll('.catalog-section').forEach(section=>{const t=section.
 document.getElementById('year').textContent=new Date().getFullYear();
 </script><script id="w3f-handler">(function(){function msg(f){var m=f.querySelector(".w3f-msg");if(!m){m=document.createElement("p");m.className="w3f-msg";m.setAttribute("role","status");m.style.cssText="flex-basis:100%;width:100%;margin:8px 0 0;font-size:14px;line-height:1.4";f.appendChild(m);}return m}document.addEventListener("submit",function(e){var f=e.target;if(!f||!f.matches||!f.matches("form[data-w3f]"))return;e.preventDefault();e.stopImmediatePropagation();var m=msg(f),b=f.querySelector("button[type=submit],button:not([type]),input[type=submit]"),contact=!!f.querySelector("textarea");if(b)b.disabled=true;m.textContent="Sending…";fetch(f.action,{method:"POST",headers:{Accept:"application/json"},body:new FormData(f)}).then(function(r){return r.json().catch(function(){return{success:r.ok}})}).then(function(d){if(!d||!d.success)throw 0;m.textContent=contact?"Thanks! Your message has been sent. We will reply soon.":"Thanks! You are subscribed.";f.reset();}).catch(function(){m.textContent="Sorry, that did not go through. Please try again or email agents@getservices.ai."}).then(function(){if(b)b.disabled=false})},true);document.addEventListener("click",function(e){var t=e.target,f=t&&t.closest?t.closest("form[data-w3f]"):null;if(f&&t.closest("button:not([type=button]),input[type=submit]"))e.stopPropagation();},true);})();</script><script src="promos.js" defer></script>
 <script src="https://atlas-api-v2.python-tester.workers.dev/hub/carousel.js" data-site="desi.markets" async></script>
+<!-- amz-carousel:start -->
+<style id="amzc-css">
+.amzc{position:relative}
+.amzc .amzc-track{display:flex!important;flex-wrap:nowrap!important;grid-template-columns:none!important;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:2px 2px 12px;margin:0;list-style:none;scrollbar-width:thin;-webkit-overflow-scrolling:touch}
+.amzc .amzc-track>*{flex:0 0 230px!important;width:230px!important;max-width:none!important;scroll-snap-align:start;margin:0!important}
+.amzc-arrow{position:absolute;top:calc(50% - 28px);z-index:3;width:44px;height:44px;border-radius:999px;border:1px solid #e5e7eb;background:rgba(255,255,255,.96);box-shadow:0 4px 14px rgba(17,24,39,.14);cursor:pointer;font:400 26px/1 system-ui,sans-serif;color:#111827;display:grid;place-items:center;padding:0 0 3px;transition:opacity .2s,background .2s}
+.amzc-arrow:hover{background:#f3f4f6}.amzc-arrow:focus-visible{outline:2px solid #2563eb;outline-offset:2px}
+.amzc-arrow[disabled]{opacity:0;pointer-events:none}.amzc-prev{left:-14px}.amzc-next{right:-14px}
+.amzc-count{font-size:13px;color:#6b7280;margin:0 0 8px}
+@media(max-width:640px){.amzc .amzc-track>*{flex-basis:170px!important;width:170px!important}.amzc-arrow{width:36px;height:36px;font-size:22px}.amzc-prev{left:4px}.amzc-next{right:4px}}
+@media(prefers-reduced-motion:reduce){.amzc .amzc-track{scroll-behavior:auto}}
+</style>
+<script id="amzc-js">
+/* Amazon Picks carousel: turns the home page Amazon picks grid into one sliding row
+   with arrows (same look as the Chambelli carousel). Swipe on phones, arrow keys when focused. */
+(function(){
+  var AMZ=/amazon\.(com|ca|co\.uk|de)\/|amzn\.to\//i;
+  function hasAmz(el){return (el.tagName==="A"&&AMZ.test(el.href))||!!Array.prototype.find.call(el.querySelectorAll("a[href]"),function(a){return AMZ.test(a.href)});}
+  function findTrack(sec){
+    var best=null,els=[sec].concat(Array.prototype.slice.call(sec.querySelectorAll("*")));
+    els.forEach(function(el){
+      var kids=Array.prototype.filter.call(el.children,function(c){return !/^(SCRIPT|STYLE|TEMPLATE)$/.test(c.tagName)});
+      var n=kids.filter(hasAmz).length;
+      if(n>=3&&n>=kids.length*0.6&&(!best||n>best.n))best={el:el,n:n};
+    });
+    return best&&best.el;
+  }
+  function init(){
+    var secs=document.querySelectorAll("#amazon-picks,#amazon,#amazon-gear,.amz-picks");
+    if(!secs.length)secs=Array.prototype.map.call(document.querySelectorAll("h2,h3"),function(h){return /amazon/i.test(h.textContent)&&h.closest("section,div")}).filter(Boolean);
+    Array.prototype.forEach.call(secs,function(sec){
+      var track=findTrack(sec);
+      if(!track||track.dataset.amzc)return;
+      var cs=getComputedStyle(track);
+      if(/auto|scroll/.test(cs.overflowX)&&cs.flexWrap!=="wrap")return; /* already a slider */
+      track.dataset.amzc="1";
+      var wrap=document.createElement("div");wrap.className="amzc";
+      track.parentNode.insertBefore(wrap,track);wrap.appendChild(track);
+      track.classList.add("amzc-track");track.tabIndex=0;
+      track.setAttribute("aria-label","Amazon picks, use the arrows or left and right keys to browse");
+      var prev=document.createElement("button"),next=document.createElement("button");
+      prev.type=next.type="button";prev.className="amzc-arrow amzc-prev";next.className="amzc-arrow amzc-next";
+      prev.innerHTML="&#8249;";next.innerHTML="&#8250;";prev.setAttribute("aria-label","Previous picks");next.setAttribute("aria-label","Next picks");
+      wrap.insertBefore(prev,track);wrap.appendChild(next);
+      var count=document.createElement("p");count.className="amzc-count";
+      count.textContent=track.children.length+" picks · swipe or use the arrows";
+      wrap.parentNode.insertBefore(count,wrap);
+      function update(){var max=track.scrollWidth-track.clientWidth-2;prev.disabled=track.scrollLeft<=2;next.disabled=track.scrollLeft>=max;}
+      function page(d){track.scrollBy({left:d*Math.max(track.clientWidth*0.85,200),behavior:"smooth"});}
+      prev.onclick=function(){page(-1)};next.onclick=function(){page(1)};
+      track.addEventListener("keydown",function(e){if(e.key==="ArrowLeft"){e.preventDefault();page(-1)}if(e.key==="ArrowRight"){e.preventDefault();page(1)}});
+      track.addEventListener("scroll",update,{passive:true});window.addEventListener("resize",update);update();
+    });
+  }
+  if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
+})();
+</script>
+<!-- amz-carousel:end -->
 </body></html>
